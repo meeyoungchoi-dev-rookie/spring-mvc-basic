@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea3bc647-b670-49ec-b268-a6f7610fbf32" name="Default Changelist" comment="merge">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/HelloData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestBodyJsonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestBodyStringController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestHeaderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestParamController.java" afterDir="false" />
+    <list default="true" id="ea3bc647-b670-49ec-b268-a6f7610fbf32" name="Default Changelist" comment="0307 HTTP 요청파라미터 관련 실습 merge">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/response/ResponseViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/basic/hello-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/response/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestBodyStringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestBodyStringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestHeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/request/RequestHeaderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/requestmapping/MappingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/springmvc/basic/requestmapping/MappingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\springboot\spring-mvc-basic\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springboot\spring-mvc-basic\src\main\resources\templates\response" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="SpringmvcApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -101,53 +105,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="spring-mvc-basic" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="spring-mvc-basic" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646662385036</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="0307 HTTP 요청파라미터 관련 실습 merge">
+      <created>1646664958918</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646664958918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +163,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0306 merge" />
     <MESSAGE value="03월 07일 spring HTTP 요청파라미터 실습 및 정리" />
-    <option name="LAST_COMMIT_MESSAGE" value="03월 07일 spring HTTP 요청파라미터 실습 및 정리" />
+    <MESSAGE value="0307 HTTP 요청파라미터 관련 실습 merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="0307 HTTP 요청파라미터 관련 실습 merge" />
   </component>
 </project>
